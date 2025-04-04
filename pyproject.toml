@@ -36,8 +36,9 @@ dependencies = [
     "pdb2pqr>=3.6.2",
     "propka>=3.5.1",
     "pandas>=2.2.2",
+    "scipy==1.10.1"
+    # NOTE: ProDy is installed from GitHub, see requirements.txt
 ]
-keywords = ["protein", "protein engineering", "structural biology", "computational biology", "biology", "bioinformatics", "sequence", "amino acid", "residue", "dataset", "PDB", "antibody", "antibody engineering", "cdr"]
 
 [project.optional-dependencies]
 dev = [
@@ -49,3 +50,6 @@ dev = [
 Homepage = "https://protkit.silicogenesis.com"
 Repository = "https://github.com/silicogenesis/protkit"
 Documentation = "https://silicogenesis.github.io/protkit"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
