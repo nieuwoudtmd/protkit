@@ -36,7 +36,7 @@ dependencies = [
     "pdb2pqr>=3.6.2",
     "propka>=3.5.1",
     "pandas>=2.2.2",
-    "scipy==1.10.1"
+    "scipy==1.12.0"
     # NOTE: ProDy is installed from GitHub, see requirements.txt
 ]
 
